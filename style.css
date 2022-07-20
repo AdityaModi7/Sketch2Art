@@ -1,0 +1,72 @@
+body {
+    margin:0px;
+    background-color:#81c784;
+}
+
+.imgBoard {
+    background-color: white;
+    width: calc(50% - 15px);
+    height: calc(90vh - 15px);
+    display:inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#sketchBoard {
+    float: left;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#resultBoard {
+    float: right;
+    margin-right: 10px;
+    margin-left: 5px;
+
+}
+
+#toolBar {
+    background-color: #e0e0e0;
+    width: calc(100% - 20px);
+    height: calc(10vh - 20px);
+    min-height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display:inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+@media (max-width: 1200px) {
+    .imgBoard {
+        width: calc(100% - 20px);
+        float: center;
+        margin-bottom: 5px;
+    }
+
+    #sketchBoard {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        height: calc(45vh - 15px);
+
+
+    }
+
+    #resultBoard {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        height: calc(45vh - 10px);
+
+    }
+
+    #toolBar {
+        width: calc(100% - 20px);
+        height: calc(10vh - 19px);
+    }
+}
