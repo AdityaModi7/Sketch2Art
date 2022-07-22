@@ -3,19 +3,23 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="canvas.js"></script>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script src="canvas.js"></script>
-
         <title>Sketch2Art</title>
     </head>
     <body>
-        <canvas class="imgBoard" id="sketchBoard"></canvas>
-        <canvas class="imgBoard" id="resultBoard"></canvas>
+        <div id="container">
+            <div class="halfDivider" id="leftDivider">
+                <canvas class="imgBoard" id="sketchBoard"></canvas>
+            </div>
+            <div class="halfDivider" id="rightDivider">
+                <canvas class="imgBoard" id="resultBoard"></canvas>
+            </div>
+        </div>
         <div id="toolBar"></div>
+
     </body>
+    <script src="canvas.js"></script>
+
 </html>
