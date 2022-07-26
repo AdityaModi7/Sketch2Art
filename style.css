@@ -42,13 +42,10 @@ body {
 
 #toolBar {
     background-color: #e0e0e0;
-    width: calc(100vw - 20px);
-    height: calc(10vh - 20px);
+    width: 100vw;
+    height: calc(10vh - 15px);
     min-height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 15px;
     display:inline-block;
     position: fixed;
     bottom: 0;

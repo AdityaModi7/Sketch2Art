@@ -1,5 +1,8 @@
 // create canvas element and append it to document body
 var canvas = document.getElementById('sketchBoard');
+var container = document.getElementById('container');
+canvas.width = 256;
+canvas.height = 256;
 
 // get canvas 2D context and set him correct size
 var ctx = canvas.getContext('2d');
@@ -24,7 +27,7 @@ canvas.addEventListener('mousemove', draw);
 function setPosition(e) {
     var rect = canvas.getBoundingClientRect();
     pos.x = (e.clientX - canvas.offsetLeft) * (canvas.width / rect.width);
-    pos.y = (e.clientY - canvas.offsetTop) * (canvas.height / rect.height);
+    pos.y = (e.clientY - (canvas.offsetTop + container.offsetTop) + container.scrollTop) * (canvas.height / rect.height);
 }
 
 function draw(e) {
