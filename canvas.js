@@ -15,7 +15,7 @@ ctx.canvas.height = canvas.height;
 var pos = { x: 0, y: 0 };
 var color = 'black';
 
-ctx.lineWidth = 2;
+ctx.lineWidth = 1;
 ctx.lineCap = 'round';
 
 canvas.addEventListener('mousedown', setPosition);
@@ -41,4 +41,12 @@ function draw(e) {
     ctx.lineTo(pos.x, pos.y); // to
 
     ctx.stroke(); // draw
+}
+
+function modify() {
+
+}
+
+function refresh() {
+    
 }
