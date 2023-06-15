@@ -79,10 +79,13 @@ body {
     }
 
     #toolBar {
-        width: 100vw;
+        width: 1000vw;
         height: calc(10vh - 19px);
         margin: 0 0;
         position: fixed;
         top: 0;
     }
+  
+          
+    
 }
